@@ -6,11 +6,11 @@ import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-ReactDOM.render(
+root.render(
   <TransactionProvider>
     <React.StrictMode>
       <App />
     </React.StrictMode>
   </TransactionProvider>,
-  document.getElementById('root')
+  
 )
