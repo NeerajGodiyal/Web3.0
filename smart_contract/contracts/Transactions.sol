@@ -1,4 +1,7 @@
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.0;
+import "../node_modules/hardhat/console.sol";
+
 contract Transactions {
     uint256 transactionCount;
     event Transfer (address from , address receiver , uint amount , string message , uint256 timestamp, string keyword);
@@ -21,7 +24,7 @@ contract Transactions {
         emit Transfer(msg.sender , receiver , amount , message , block.timestamp , keyword);
     }
     function getAllTransactions() public view returns (TransferStruct[] memory) {
-        //return transactions;
+        return transactions;
     }
     function getTransactionCount() public view returns (uint256) {
         return transactionCount;

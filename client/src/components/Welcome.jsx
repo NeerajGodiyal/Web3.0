@@ -34,7 +34,7 @@ const Welcome = () => {
 
         sendTransaction();
         
-    }
+    };
 
 
 
